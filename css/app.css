@@ -123,6 +123,8 @@ input.button {
 .sidebox {
   background: #343333;
   position: relative;
+  float:none;
+  clear:both;
   margin: 20px;
   padding: 10px 20px 10px 20px;
   border-radius: 8px;
@@ -136,13 +138,12 @@ input.button {
   position:relative;
   margin-top:10px;
   height:290px;
-  margin-left:10px;
+    text-align:center;
 }
 
  .sidebox  .myButton {
   width:75px;
   height:36px;
-  position:absolute;
   border: none;
 }
 .sidebox .mySelect {
@@ -154,17 +155,14 @@ input.button {
   position:relative;
 }
 .sidebox #slideshow-area {
-  width:222px;
-  height:180px;
+  width:208px;
+  height:160px;
   overflow:hidden;
-  position:absolute;
-  top:50px;
-  left:35px;
+  margin:10px auto;
 }
 .sidebox #slideshow-scroller .thumb {
   width:100px;
   height:80px;
-  padding-right:8px;
   padding-bottom:10px;
   display:inline-block;
 }
@@ -179,8 +177,6 @@ input.button {
 
 .sidebox #slideshow-previous {
   background: url("../images/up-arrow.gif") no-repeat scroll 0 0 transparent;
-  top:0;
-  left:95px;
 }
 .sidebox #slideshow-previous:hover {
   background-position: center bottom;
@@ -222,7 +218,7 @@ input.button {
   list-style-type: none;
   padding: 0;
   display: inline-block;
-  margin-left:0;
+  margin:0;
    }
 
 .sidebox .social li {
@@ -353,32 +349,32 @@ margin-bottom:10px;
   }
 .top h1{background: url(../images/logo_smallest.gif)no-repeat;height:72px;}
 .top {height:170px;}
-aside.sidebox .social {
+sidebox .social {
   margin:0;
 }
-aside.sidebox .foot,
-aside.sidebox .head {width:100%;}
+sidebox .foot,
+sidebox .head {width:100%;}
 .search {text-align:center;}
-aside.sidebox .calendar {
+sidebox .calendar {
   height: 200px;
   margin: 0 auto;
   text-align: center;
   width: 215px;
 }
-aside.sidebox .imagegym {
+sidebox .imagegym {
   margin: 0 auto;
   padding:0;
 }
-aside.sidebox .social ul {
+sidebox .social ul {
   margin:0 auto;
 }
 
-aside.sidebox .social ul {
+sidebox .social ul {
   display: table;
   list-style-type: none;
   margin: 0 auto;
 }
-aside.sidebox .social li {
+sidebox .social li {
   display: table-cell;
   padding: 8px;
 }
@@ -396,32 +392,32 @@ aside.sidebox .social li {
 	}
 .top h1{background: url(../images/logo_sm.gif)no-repeat;}
 
-aside.sidebox .social {
+sidebox .social {
   margin:0;
 }
-aside.sidebox .foot,
-aside.sidebox .head {width:100%;}
+sidebox .foot,
+sidebox .head {width:100%;}
 .search {text-align:center;}
-aside.sidebox .calendar {
+sidebox .calendar {
   height: 200px;
   margin: 0 auto;
   text-align: center;
   width: 215px;
 }
-aside.sidebox .imagegym {
+sidebox .imagegym {
   margin: 0 auto;
   padding:0;
 }
-aside.sidebox .social ul {
+sidebox .social ul {
   margin:0 auto;
 }
 
-aside.sidebox .social ul {
+sidebox .social ul {
   display: table;
   list-style-type: none;
   margin: 0 auto;
 }
-aside.sidebox .social li {
+sidebox .social li {
   display: table-cell;
   padding: 8px;
 }
@@ -434,34 +430,34 @@ body .top h1{background: url(../images/logo_sm.gif)no-repeat;}
 body .main {width:95%;}
 body .foooter{width:95%;}
 body .login.columns {position:static;display:block;padding:10px 20px;float:none;width:100%;text-align:left;}
-aside.sidebox {float:none;width:386px;padding:0;}
-aside.sidebox .social {
+sidebox {float:none;width:386px;padding:0;}
+sidebox .social {
   margin:0;
 }
-aside.sidebox .foot,
-aside.sidebox .head {width:100%;}
+sidebox .foot,
+sidebox .head {width:100%;}
 .search {text-align:center;}
-aside.sidebox .calendar {
+sidebox .calendar {
   height: 200px;
   margin: 0 auto;
   text-align: center;
   width: 215px;
 }
-aside.sidebox .imagegym {
+sidebox .imagegym {
   margin: 0 auto;
   padding:0;
   width:210px;
 }
-aside.sidebox .social ul {
+sidebox .social ul {
   margin:0 auto;
 }
 
-aside.sidebox .social ul {
+sidebox .social ul {
   display: table;
   list-style-type: none;
   margin: 0 auto;
 }
-aside.sidebox .social li {
+sidebox .social li {
   display: table-cell;
   padding: 8px;
 }
