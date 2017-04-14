@@ -1,0 +1,153 @@
+/************************************************************************************
+smaller than 980
+*************************************************************************************/
+@media screen and (max-width: 960px) {
+
+.main {width:95%;}
+.foooter{width:95%}
+.login {position:static;display:block;padding:10px 20px;}
+.top {height:95px;}
+#log {overflow:visible;}
+#slideshow {display:none;}
+.del,
+.edit {position:relative;display:inline-block;}
+.edit {right:0;}
+.head .date {float:none;margin-left:0;margin-top:10px;display:block;}
+.entry .head {margin-left:0}
+}
+
+
+
+/************************************************************************************
+smaller than 758
+*************************************************************************************/
+@media screen and (max-width: 758px) {
+body .top {overflow:visible;}
+body .top h1{background: url(../images/logo_sm.gif)no-repeat;}
+body .main {width:95%;}
+body .foooter{width:95%;}
+body #slideshow {display:none;}
+body .login {position:static;display:block;padding:10px 20px;}
+aside.sidebox {float:none;width:386px;padding:0;}
+aside.sidebox .social {
+  margin:0;
+}
+aside.sidebox .foot,
+aside.sidebox .head {width:100%;}
+.search {text-align:center;}
+aside.sidebox .calendar {
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  width: 215px;
+}
+aside.sidebox .imagegym {
+  margin: 0 auto;
+  padding:0;
+  width:210px;
+}
+aside.sidebox .social ul {
+  margin:0 auto;
+}
+
+aside.sidebox .social ul {
+  display: table;
+  list-style-type: none;
+  margin: 0 auto;
+}
+aside.sidebox .social li {
+  display: table-cell;
+  padding: 8px;
+}
+
+}
+
+/************************************************************************************
+Trying to target Kindle Fire
+*************************************************************************************/
+@media handheld and (min-width: 526px) and (max-width: 950px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+.top h1{background: url(../images/logo_sm.gif)no-repeat;}
+
+aside.sidebox .social {
+  margin:0;
+}
+aside.sidebox .foot,
+aside.sidebox .head {width:100%;}
+.search {text-align:center;}
+aside.sidebox .calendar {
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  width: 215px;
+}
+aside.sidebox .imagegym {
+  margin: 0 auto;
+  padding:0;
+}
+aside.sidebox .social ul {
+  margin:0 auto;
+}
+
+aside.sidebox .social ul {
+  display: table;
+  list-style-type: none;
+  margin: 0 auto;
+}
+aside.sidebox .social li {
+  display: table-cell;
+  padding: 8px;
+}
+
+}
+
+/************************************************************************************
+smaller than 320 Iphone users // use max-device-width for iphone
+*************************************************************************************/
+@media only screen and (max-device-width: 480px) {
+
+  /* disable webkit text size adjust (for iPhone) */
+  html {
+    -webkit-text-size-adjust: none;
+  }
+.top h1{background: url(../images/logo_smallest.gif)no-repeat;height:72px;}
+.top {height:170px;}
+aside.sidebox .social {
+  margin:0;
+}
+aside.sidebox .foot,
+aside.sidebox .head {width:100%;}
+.search {text-align:center;}
+aside.sidebox .calendar {
+  height: 200px;
+  margin: 0 auto;
+  text-align: center;
+  width: 215px;
+}
+aside.sidebox .imagegym {
+  margin: 0 auto;
+  padding:0;
+}
+aside.sidebox .social ul {
+  margin:0 auto;
+}
+
+aside.sidebox .social ul {
+  display: table;
+  list-style-type: none;
+  margin: 0 auto;
+}
+aside.sidebox .social li {
+  display: table-cell;
+  padding: 8px;
+}
+.login{width:259px;display:inline-block;height:76px;}
+.login form{display:block;}
+.login .wrapper{display:block;float:right;margin-bottom:5px;clear:right;}
+.login .wrapper .inputbox{width:170px;}
+
+}

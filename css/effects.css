@@ -1,0 +1,73 @@
+#slideshow {
+  /* Thomas Traub reported that there were white flashes in Safari 5.1 */
+  -webkit-transform-style: preserve-3d;
+  position: relative;
+  width: 965px;
+  height: 350px;
+  overflow: hidden;
+  border: none; }
+
+#slideshow img {
+  position: absolute;
+  width: 965px;
+  height: 350px;
+  top: 178px;
+  left: 453px;
+  margin-left: -453px;
+  margin-top: -178px;
+  opacity: 0;
+  -webkit-transition-property: opacity, -webkit-transform;
+  -webkit-transition-duration: 3s, 8s;
+  -moz-transition-property: opacity, -moz-transform;
+  -moz-transition-duration: 3s, 8s;
+  -ms-transition-property: opacity, -ms-transform;
+  -ms-transition-duration: 3s, 8s;
+  -o-transition-property: opacity, -o-transform;
+  -o-transition-duration: 3s, 8s;
+  transition-property: opacity, transform;
+  transition-duration: 3s, 8s; }
+
+#slideshow img {
+  -webkit-transform-origin: top, 50%;
+  -moz-transform-origin: top, 50%;
+  -ms-transform-origin: top, 50%;
+  -o-transform-origin: top, 50%;
+  transform-origin: top, 50%; }
+
+#slideshow :nth-child(2n+1) {
+  -webkit-transform-origin: top, right;
+  -moz-transform-origin: top, right;
+  -ms-transform-origin: top, right;
+  -o-transform-origin: top, right;
+  transform-origin: top, right; }
+
+#slideshow :nth-child(3n+1) {
+  -webkit-transform-origin: top, right;
+  -moz-transform-origin: top, right;
+  -ms-transform-origin: top, right;
+  -o-transform-origin: top, right;
+  transform-origin: top, right; }
+
+#slideshow :nth-child(4n+1) {
+  -webkit-transform-origin: top, right;
+  -moz-transform-origin: top, right;
+  -ms-transform-origin: top, right;
+  -o-transform-origin: top, right;
+  transform-origin: top, right; }
+
+/**
+ * hack to get the top images out of the stack when the first one is styled
+ * what we really need is to take care of the two last ones in the stack, but
+ * it is more 'flexible' to go with the selector below as the only one we
+ * really don't want to send 'behind' is the one right after the first one (#2).
+ */
+#slideshow .fx:first-child + img ~ img {
+  z-index: -1; }
+
+#slideshow .fx {
+  opacity: 1;
+  -webkit-transform: scale(1.2) translate(30px);
+  -moz-transform: scale(1.2) translate(30px);
+  -ms-transform: scale(1.2) translate(30px);
+  -o-transform: scale(1.2) translate(30px);
+  transform: scale(1.2) translate(30px); }
