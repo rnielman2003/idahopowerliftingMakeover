@@ -22,14 +22,27 @@
 
 </head>
 
-<body>
+<body ng-app="Mod" ng-controller="Ctrl">
+  <div youtube-dialog title="" open="{{dialogOpen}}" close-button="" close-callback="handleClose">
+    <div ng-switch="thetypeofdialog">
+        <iframe width="560" height="315" ng-switch-when="youtube" ng-src="{{message1}}" frameborder="0" allowfullscreen></iframe>
+        <div ng-switch-when="image">
+            <div class="wrapper"><img src="{{message1}}"/></div>
+            <p class="cntr">{{message2}}</p>
+        </div>
+       <div ng-switch-default>
+            <div class="wrapper"><img src="{{message1}}"/></div>
+            <p class="cntr">{{message2}}</p>
+        </div>
+    </div>
+  </div>
   <div class="main">
     <header>
-      <div class="row">
-        <div class="large-6 columns">
+      <div class="row medium-collapse large-collapse removepadding">
+        <div class="large-7 columns">
           <h1 class="powerheader">Idaho Powerlifting</h1>
         </div>
-        <div class="login large-6 columns">
+        <div class="login large-5 columns">
           <!--dynamic stuff here-->
           <form action="http://www.idahopowerlifting.com/index.php/blog" method="post" accept-charset="utf-8" class="ng-pristine ng-valid">
             <div class="wrapper"><label for="username">Username: </label><input type="text" name="username" value="" id="username" size="12" class="inputbox"></div>&nbsp;&nbsp;
@@ -40,18 +53,20 @@
         </div>
       </div>
 
-      <div class="row collapse">
+      <div class="row show-for-large medium-collapse large-collapse removepadding">
         <div class="large-12 columns">
+          <div class="slideshowwrapper">
           <div id="slideshow">
-            <img src="images/01.jpg" alt="">
+            <img src="images/01.jpg" alt="" class="fx"><!-- remove class later -->
             <img src="images/02.jpg" alt="">
             <img src="images/03.jpg" alt="">
             <img src="images/04.jpg" alt="">
           </div>
+          </div>
         </div>
       </div>
     </header>
-    <div class="row">
+    <div class="row medium-collapse large-collapse removepadding">
       <div class="large-8 medium-8 columns">
         <!-- Grid Example -->
         <div class="row">
@@ -86,6 +101,9 @@
               </div>
             </article>
 
+            <div class="bottomNav">
+            <a href="javascript:void(0)" ng-click="navigatePrevious()">&larr; A Week Back</a><span ng-show="showNext">&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0)" ng-click="navigateNext()">A Week Forward &rarr;</a></span>
+            </div>
           </div>
         </div>
 
@@ -112,7 +130,7 @@
               <div type="text" id="datepicker" ng-model="date" datepicker></div>
             </div>
           </section>
-          <section>
+          <section class="show-for-large-up">
             <div class="imagegym">
               <button id="slideshow-previous" class="myButton"></button>
               <div id="slideshow-area">
