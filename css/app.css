@@ -458,6 +458,7 @@ sidebox .social li {
   display: table-cell;
   padding: 8px;
 }
+.sidebox #slideshow-scroller .thumb {width:90px;height:70px;}
 
 } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
