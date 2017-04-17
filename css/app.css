@@ -344,15 +344,10 @@ margin-bottom:10px;
  /* Small screens */
 @media only screen {
     /* disable webkit text size adjust (for iPhone) */
-  html {
-    -webkit-text-size-adjust: none;
-  }
-.top h1{background: url(../images/logo_smallest.gif)no-repeat;height:72px;}
+html { -webkit-text-size-adjust: none; }
+body h1.powerheader{background: url(../images/logo_smallest.gif)no-repeat;height:72px;}
 .top {height:170px;}
-sidebox .social {
-  margin:0;
-}
-sidebox .foot,
+sidebox .social { margin:0; }
 sidebox .head {width:100%;}
 .search {text-align:center;}
 sidebox .calendar {
@@ -368,7 +363,7 @@ sidebox .imagegym {
 sidebox .social ul {
   margin:0 auto;
 }
-
+.login .wrapper {display:block;}
 sidebox .social ul {
   display: table;
   list-style-type: none;
@@ -382,19 +377,23 @@ sidebox .social li {
  } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) {
+  body .login.columns {position:static;display:block;padding:10px 20px;float:none;width:100%;text-align:left;}
+   .fixed-width {position: relative;display:block; }
+   body h1.powerheader{background: url(../images/logo_smallest.gif)no-repeat;height:72px;}
+   body .main {width:98%;}
+   .login .wrapper {display:block;}
  } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 /* Medium screens */
 @media only screen and (min-width: 40.063em) {
     /* disable webkit text size adjust (for iPhone) */
-	html {
-		-webkit-text-size-adjust: none;
-	}
-.top h1{background: url(../images/logo_sm.gif)no-repeat;}
-
-sidebox .social {
-  margin:0;
-}
+html {-webkit-text-size-adjust: none;}
+body h1.powerheader{background: url(../images/logo_sm.gif)no-repeat;background-size:auto;}
+body .main {width:98%;}
+.login .wrapper {display:inline;}
+sidebox .social { margin:0;}
+.fixed-width {position: relative;display:block; }
+.fixed-width-right {padding-right: 0;}
 sidebox .foot,
 sidebox .head {width:100%;}
 .search {text-align:center;}
@@ -424,16 +423,14 @@ sidebox .social li {
  } /* min-width 641px, medium screens */
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
-
+  body h1.powerheader{background: url(../images/logo_sm.gif) no-repeat;background-size:auto;}
 body .top {overflow:visible;}
-body .top h1{background: url(../images/logo_sm.gif)no-repeat;}
 body .main {width:95%;}
-body .foooter{width:95%;}
 body .login.columns {position:static;display:block;padding:10px 20px;float:none;width:100%;text-align:left;}
 sidebox {float:none;width:386px;padding:0;}
-sidebox .social {
-  margin:0;
-}
+sidebox .social { margin:0;}
+.fixed-width {position: absolute;min-width: 260px;right:0; }
+.medium-collapse > .fixed-width-right {padding-right: 30px;}
 sidebox .foot,
 sidebox .head {width:100%;}
 .search {text-align:center;}
@@ -466,11 +463,11 @@ sidebox .social li {
 
 /* Large screens */
 @media only screen and (min-width: 64.063em) { 
-
+body h1.powerheader{background: url(../images/logo.gif) no-repeat;background-size:auto;}
 } /* min-width 1025px, large screens */
 
 @media only screen and (min-width: 64.063em) and (max-width: 90em) { 
-
+body h1.powerheader{background: url(../images/logo.gif) no-repeat;background-size:auto;}
 .main {width:95%;}
 .foooter{width:95%}
 .login {position:static;display:block;padding:10px 20px;}
