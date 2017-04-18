@@ -479,18 +479,17 @@ body h1.powerheader{background: url(../images/logo.gif) no-repeat;background-siz
 .edit {right:0;}
 .head .date {margin-left:0;display:block;}
 .entry .head {margin-left:0}
+.slideshowwrapper { height:350px;}
 } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
 
 /* XLarge screens */
 @media only screen and (min-width: 90.063em) {
-
+    .slideshowwrapper { height:400px;}
  } /* min-width 1441px, xlarge screens */
 
 @media only screen and (min-width: 90.063em) and (max-width: 120em) {
-
  } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
 
 /* XXLarge screens */
 @media only screen and (min-width: 120.063em) {
-
  } /* min-width 1921px, xxlarge screens */

@@ -2,15 +2,15 @@
   /* Thomas Traub reported that there were white flashes in Safari 5.1 */
   -webkit-transform-style: preserve-3d;
   position: relative;
-  width: 965px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   border: none; }
 
 #slideshow img {
   position: absolute;
-  width: 965px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   top: 178px;
   left: 453px;
   margin-left: -453px;
@@ -26,6 +26,9 @@
   -o-transition-duration: 3s, 8s;
   transition-property: opacity, transform;
   transition-duration: 3s, 8s; }
+
+
+
 
 #slideshow img {
   -webkit-transform-origin: top, 50%;

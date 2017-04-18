@@ -57,10 +57,10 @@
         <div class="large-12 columns">
           <div class="slideshowwrapper">
           <div id="slideshow">
-            <img src="images/01.jpg" alt="" class="fx"><!-- remove class later -->
-            <img src="images/02.jpg" alt="">
-            <img src="images/03.jpg" alt="">
-            <img src="images/04.jpg" alt="">
+            <img src="images/01.jpg" alt="" width="100%" height="100%">
+            <img src="images/02.jpg" alt="" width="100%" height="100%">
+            <img src="images/03.jpg" alt="" width="100%" height="100%">
+            <img src="images/04.jpg" alt="" width="100%" height="100%">
           </div>
           </div>
         </div>
@@ -132,9 +132,6 @@
             </div>
           </div>
         </div>
-
-
-
 
 
       </div>
@@ -240,6 +237,27 @@
   <script src="js/vendor/what-input.js"></script>
   <script src="js/vendor/foundation.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script> 
+(function(){
+  document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
+  window.setInterval(kenBurns, 4000);       
+  var images                = document.getElementById('slideshow').getElementsByTagName('img'),
+      numberOfImages    = images.length,
+      i                         = 1;  // we want to start with the second image as the first one is styled onload
+  function kenBurns() {
+        // if we have gone through all images, we reset the variable for the loop
+        if(i==numberOfImages){ i = 0;}
+        images[i].className = "fx";
+        // we can't remove the class from the previous element or we'd get a bouncing effect so we clean up the one before last
+        // there must be a smarter way to do this though
+        if(i===0){ images[numberOfImages-2].className = "";}
+        if(i===1){ images[numberOfImages-1].className = "";}
+        if(i>1){ images[i-2].className = "";}
+        i++;
+    }
+})();
+
+</script>
 </body>
 
 </html>
