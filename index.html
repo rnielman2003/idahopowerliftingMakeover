@@ -234,30 +234,10 @@
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular-sanitize.min.js"></script>
-  <script src="js/vendor/what-input.js"></script>
-  <script src="js/vendor/foundation.js"></script>
+  <script type="text/javascript" src="js/vendor/what-input.js"></script>
+  <script type="text/javascript" src="js/vendor/foundation.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
-  <script> 
-(function(){
-  document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
-  window.setInterval(kenBurns, 4000);       
-  var images                = document.getElementById('slideshow').getElementsByTagName('img'),
-      numberOfImages    = images.length,
-      i                         = 1;  // we want to start with the second image as the first one is styled onload
-  function kenBurns() {
-        // if we have gone through all images, we reset the variable for the loop
-        if(i==numberOfImages){ i = 0;}
-        images[i].className = "fx";
-        // we can't remove the class from the previous element or we'd get a bouncing effect so we clean up the one before last
-        // there must be a smarter way to do this though
-        if(i===0){ images[numberOfImages-2].className = "";}
-        if(i===1){ images[numberOfImages-1].className = "";}
-        if(i>1){ images[i-2].className = "";}
-        i++;
-    }
-})();
-
-</script>
+  <script type="text/javascript" src="js/kenBurns.js"></script>
 </body>
 
 </html>
